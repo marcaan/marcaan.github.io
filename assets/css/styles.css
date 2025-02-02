@@ -1,0 +1,57 @@
+*{
+  margin: 0 auto;
+  color: #1c1c1c;
+}
+.container-header{
+  margin-top: 35px;
+  padding: 0 30px;
+}
+.container-logo a{
+  display: inline-block;
+}
+.nav-menu{
+  font-family: 'Space Mono', sans-serif;
+  font-size: 1.1rem;
+}
+.nav-menu .nav-container .navbar-nav{
+  margin-right: 0;
+}
+.nav-menu .nav-container .navbar-nav .first-home a{
+  color: #1c1c1c;
+}
+.nav-menu .nav-container .navbar-nav a{
+  color: rgba(0, 0, 0, .57);
+}
+.nav-menu .nav-container .navbar-nav a:hover{
+  color: #1c1c1c;
+}
+.nav-menu .nav-container .navbar-nav .last-contact a{
+  padding-right: 0;
+}
+.container-hero{
+  height: 500px;
+  width: 100%;
+  background-color: aquamarine;
+  margin-top: 40px;
+  background-image: url('');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-hero .row{
+  height: 500px;
+}
+.container-hero .container-hero-text p{
+  font-family: 'Space Mono', sans-serif;
+  font-size: 27px;
+}
+.container-hero .container-hero-text h1{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 900;
+}
+.container-hero .container-hero-img img{
+  position: absolute;
+  right: -220px;
+}
