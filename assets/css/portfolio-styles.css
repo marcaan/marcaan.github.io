@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  height: 100%;
+}
+.container-header{
+  margin-top: 35px;
+  padding: 0 30px;
+}
+.container-logo a{
+  display: inline-block;
+  color: transparent;
+}
+.container-logo a .logo-scritta{
+  width: 150px;
+}
+.container-logo a .logo-camelia{
+  width: 33px;
+  margin-left: 5px;
+}
+.nav-menu{
+  font-family: 'Space Mono', sans-serif;
+  font-size: 1.1rem;
+}
+.nav-menu .nav-container .navbar-nav{
+  margin: 0 0 0 auto;
+}
+.nav-menu .nav-container .navbar-nav .second-portfolio a{
+  color: #271843;
+}
+.nav-menu .nav-container .navbar-nav a{
+  color: #796898;
+}
+.nav-menu .nav-container .navbar-nav a:hover{
+  color: #271843;
+}
+.nav-menu .nav-container .navbar-nav .last-contact a{
+  padding-right: 0;
+}
+.container-portfolio{
+  margin-top: 70px;
+  margin-bottom: 170px;
+}
+.container-portfolio .title-portfolio{
+  text-align: center;
+}
+.container-portfolio .title-portfolio h1{
+  color: #796898;
+  font-family: 'Space Mono', sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.container-portfolio .title-portfolio h3{
+  color: #1c1c1c;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  padding-top: 25px;
+  margin-bottom: 0;
+}
+.container-portfolio .first-row{
+  margin-top: 110px;
+}
+.container-portfolio .progetto-row{
+  margin-top: 50px;
+}
+.container-portfolio .progetto-box{
+  height: 500px;
+  background-color: #eeebb9;
+}
+.container-portfolio .progetto-box h2{
+  line-height: 500px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #796898;
+}
+.container-footer{
+  background-color: #EEEBB9;
+  height: 60px;
+  position: relative;
+}
+.container-footer ul{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 60px;
+}
+.container-footer ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+.container-footer ul li:first-child{
+  padding-right: 10px;
+}
+.container-footer ul li a img{
+  height: 30px;
+  width: auto;
+}
+.container-footer span{
+  position: absolute;
+  bottom: 9px;
+  right: 20px;
+  font-size: 12px;
+  font-family: 'Space Mono', sans-serif;
+  color: #271843;
+}
+
+
+
+/* ------  MEDIA QUERIES ------ */
+
+/*------ XS DEVICES ------*/
+@media only screen and (min-width: 435px) and (max-width: 599px){
+
+}
+/*------ S DEVICES ------*/
+@media only screen and (min-width: 600px) and (max-width: 767px){
+
+}
+/*------ M DEVICES ------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+/*------ L DEVICES ------*/
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+/*------ XL devices  ------*/
+@media only screen and (min-width: 1200px){
+
+}
