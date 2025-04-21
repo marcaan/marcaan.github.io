@@ -27,7 +27,7 @@ html, body{
 .nav-menu .nav-container .navbar-nav{
   margin: 0 0 0 auto;
 }
-.nav-menu .nav-container .navbar-nav .third-about a{
+.nav-menu .nav-container .navbar-nav .active{
   color: #271843;
 }
 .nav-menu .nav-container .navbar-nav a{
@@ -61,3 +61,242 @@ html, body{
   padding-top: 25px;
   margin-bottom: 0;
 }
+.container-about .first-cv-box{
+  margin-top: 60px;
+}
+.container-about .first-cv-box h2{
+  font-family: 'Space Mono', sans-serif;
+  color: #796898;
+  font-size: 34px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.container-about .container-cv{
+  font-family: 'Montserrat', sans-serif;
+  color: #1c1c1c;
+  margin-left: 25px;
+}
+.container-about .container-cv h3{
+  color: #1c1c1c;
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 17px;
+  margin-bottom: 13px;
+}
+.container-about .container-cv h4{
+  color: #1c1c1c;
+  font-size: 20px;
+}
+.container-about .container-cv ul{
+  margin-top: 14px;
+  font-size: 16px;
+  /* padding-left: 20px; */
+}
+.container-about .container-cv ul li{
+  line-height: 26px;
+ /* padding-left: 20px;
+  background-image: url(../img/camellia.png);
+  background-position: 0 5px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat; */
+}
+.container-about .container-cv p{
+  margin-bottom: 5px;
+}
+.container-about .container-cv .voto{
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.container-about .container-cv .skills-list{
+  columns: 2;
+}
+.container-footer{
+  background-color: #EEEBB9;
+  height: 60px;
+  position: relative;
+}
+.container-footer ul{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 60px;
+}
+.container-footer ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+.container-footer ul li:first-child{
+  padding-right: 10px;
+}
+.container-footer ul li a img{
+  height: 30px;
+  width: auto;
+}
+.container-footer span{
+  position: absolute;
+  bottom: 9px;
+  right: 20px;
+  font-size: 12px;
+  font-family: 'Space Mono', sans-serif;
+  color: #271843;
+}
+.popup-menu{
+  display: none;
+}
+
+
+
+
+
+
+/* ------  MEDIA QUERIES ------ */
+
+/*------ XXS DEVICES ------*/
+@media only screen and (max-width: 399px){
+  .container-logo a .logo-camelia{
+    display: none;
+  }
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 0px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 1.8em;
+    height: 1.8em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
+  .container-footer ul li a img{
+    height: 28px;
+  }
+}
+/*------ XS DEVICES ------*/
+@media only screen and (min-width: 400px) and (max-width: 599px){
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 7px 16px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 1.8em;
+    height: 1.8em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
+  .container-logo a .logo-scritta{
+    width: 131px;
+  }
+  .container-header {
+    padding: 0 17px;
+  }
+  .container-logo a .logo-camelia {
+    width: 30px;
+    margin-left: 5px;
+  }
+  .container-about .container-cv{
+    margin-left: 0;
+  }
+  .container-about .title-about h1{
+    font-size: 46px;
+  }
+  .container-about .title-about h3{
+    font-size: 19px;
+  }
+  .container-footer ul li a img{
+    height: 28px;
+  }
+}
+/*------ S DEVICES ------*/
+@media only screen and (min-width: 600px) and (max-width: 767px){
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 7px 16px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 2em;
+    height: 2em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
+  .container-about .title-about h1{
+    font-size: 50px;
+  }
+  .container-about .title-about h3{
+    font-size: 22px;
+  }
+}
+/*------ M DEVICES ------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 7px 16px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 2em;
+    height: 2em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
+}
+/*------ L DEVICES ------*/
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+/*------ XL devices  ------*/
+@media only screen and (min-width: 1200px){
+
+}
+

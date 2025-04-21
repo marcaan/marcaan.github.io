@@ -29,7 +29,7 @@
   <title>Document</title>
 </head>
 <body>
-  <header></header>
+  <header>
     <div class="container-fluid clearfix container-header">
       <div class="row">
         <div class="col-6 container-logo">
@@ -40,21 +40,58 @@
         </div>
         <nav class="navbar navbar-expand-lg nav-menu col-6">
             <div class="container-fluid nav-container">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              <button class="navbar-toggler popup-menu btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+              <div class="offcanvas offcanvas-end popup-menu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="contacts.html">Contatti</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
               <div class="nav-box collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                   </li>
-                  <li class="nav-item second-portfolio">
+                  <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                   </li>
-                  <li class="nav-item third-about">
+                  <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                   </li>
-                  <li class="nav-item last-contact">
+                  <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="contacts.html">Contatti</a>
                   </li>
                 </ul>
@@ -73,8 +110,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6 form-area">
+        <div class="col-sm-3 col-md-3 col-lg-3"></div>
+        <div class="col col-sm-6 col-md-6 col-lg-6 form-area">
           <!-- <form>
             <div class="mb-3">
               <label for="name" class="form-label">Nome</label>
@@ -95,23 +132,27 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form> -->
-          <form action="dati.php" method="post">
+          <form  method="post" id="contact-form">
             <ul>
               <li class="name-box">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" class="testo" required/>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" class="testo" required/>
               </li>
               <li class="società-box">
-                <label for="società">Società / Azienda</label>
-                <input type="text" id="società" class="testo " required/>
+                <label for="workplace">Società / Azienda</label>
+                <input type="text" id="workplace" name="workplace" class="testo" required/>
+              </li>
+              <li class="oggetto-box">
+                <label for="object">Oggetto</label>
+                <input type="text" id="object" name="object" class="testo" required/>
               </li>
               <li class="email-box">
                 <label for="email">Email</label>
-                <input type="email" id="email" class="testo" required/>
+                <input type="email" name="email" id="email" class="testo" required/>
               </li>
               <li class="message-box">
-                <label for="testo">Messaggio</label>
-                <textarea name="testo" id="testo"></textarea>
+                <label for="message">Messaggio</label>
+                <textarea name="message" id="message"></textarea>
               </li>
               <li class="btn-box">
                 <input type="submit" value="Invia" class="btn-form"/>
@@ -119,7 +160,7 @@
             </ul>
           </form>
         </div>
-        <div class="col-3"></div>
+        <div class="col-sm-3 col-md-3 col-lg-3"></div>
       </div>
     </div>
   </section>
@@ -143,6 +184,20 @@
         </div>
       </div>
     </div>
-  </footer> 
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- EmailJS-->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("aXwNd1V8xXPU9wvXT"); // Lo trovi in Dashboard → Account → Public Key
+    })();
+  </script>
+
+  <!-- JS -->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

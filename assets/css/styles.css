@@ -27,7 +27,7 @@ html, body{
 .nav-menu .nav-container .navbar-nav{
   margin: 0 0 0 auto;
 }
-.nav-menu .nav-container .navbar-nav .first-home a{
+.nav-menu .nav-container .navbar-nav .active{
   color: #271843;
 }
 .nav-menu .nav-container .navbar-nav a{
@@ -143,6 +143,11 @@ html, body{
   font-size: 16px;
   color: #1c1c1c;
 }
+/* .container-bio .bio-btn-box .btn{
+  border: none;
+  padding: 0px;
+  width: 100%;
+} */
 .container-bio .bio-btn-box .btn-bio{
   /* color: #796898;
   background-color: #fff;
@@ -151,9 +156,10 @@ html, body{
   background-color: #796898;
   color: #EEEBB9;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   border: none;
-  margin-top: 15px;
+  margin-top: 16px;
+  padding: 9px 18px;
   width: 100%;
 }
 .container-bio .bio-btn-box .btn-bio:hover{
@@ -195,22 +201,172 @@ html, body{
   font-family: 'Space Mono', sans-serif;
   color: #271843;
 }
+.popup-menu{
+  display: none;
+}
 
 
 
 /* ------  MEDIA QUERIES ------ */
 
+/*------ XXS DEVICES ------*/
+@media only screen and (max-width: 399px){
+  .container-logo a .logo-camelia{
+    display: none;
+  }
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 0px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 1.8em;
+    height: 1.8em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
+  .container-bio .bio-box .bio-title{
+    font-size: 30px;
+  }
+  .container-footer ul li a img{
+    height: 28px;
+  }
+}
 /*------ XS DEVICES ------*/
-@media only screen and (min-width: 435px) and (max-width: 599px){
-
+@media only screen and (min-width: 400px) and (max-width: 599px){
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 0px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 1.8em;
+    height: 1.8em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
+  .container-logo a .logo-scritta{
+    width: 131px;
+  }
+  .container-header {
+    padding: 0 17px;
+  }
+  .container-logo a .logo-camelia {
+    width: 30px;
+    margin-left: 5px;
+  }
+  .container-hero .square{
+    display: none;
+  }
+  .container-hero .row{
+    height: 400px;
+  }
+  .container-hero h1{
+    bottom: 120px;
+    font-size: 50px;
+    line-height: 65px;
+    margin-left: 30px;
+  }
+  .container-bio{
+    margin-top: 110px;
+  }
+  .container-bio .bio-box .bio-title{
+    font-size: 30px;
+  }
+  .container-bio .bio-box .bio-description{
+    font-size: 14px;
+  }
+  .container-footer ul li a img{
+    height: 28px;
+  }
 }
 /*------ S DEVICES ------*/
 @media only screen and (min-width: 600px) and (max-width: 767px){
-
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 7px 16px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 2em;
+    height: 2em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
+  .container-bio .bio-description .no-sm{
+    display: none;
+  }
+  .container-hero .row{
+    height: 400px;
+  }
+  .container-hero .square {
+   display: none;
+  }
 }
 /*------ M DEVICES ------*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
-
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 7px 16px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 2em;
+    height: 2em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
+  .container-hero .square {
+    display: none;
+  }
 }
 /*------ L DEVICES ------*/
 @media only screen and (min-width: 992px) and (max-width: 1199px){

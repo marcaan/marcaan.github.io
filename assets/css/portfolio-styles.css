@@ -27,7 +27,7 @@ html, body{
 .nav-menu .nav-container .navbar-nav{
   margin: 0 0 0 auto;
 }
-.nav-menu .nav-container .navbar-nav .second-portfolio a{
+.nav-menu .nav-container .navbar-nav .active{
   color: #271843;
 }
 .nav-menu .nav-container .navbar-nav a{
@@ -110,22 +110,91 @@ html, body{
   font-family: 'Space Mono', sans-serif;
   color: #271843;
 }
+.popup-menu{
+  display: none;
+}
 
 
 
 /* ------  MEDIA QUERIES ------ */
 
 /*------ XS DEVICES ------*/
-@media only screen and (min-width: 435px) and (max-width: 599px){
-
+@media only screen and (max-width: 599px){
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 7px 16px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 1.8em;
+    height: 1.8em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
 }
 /*------ S DEVICES ------*/
 @media only screen and (min-width: 600px) and (max-width: 767px){
-
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 7px 16px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 2em;
+    height: 2em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
 }
 /*------ M DEVICES ------*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
-
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 7px 16px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 2em;
+    height: 2em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
 }
 /*------ L DEVICES ------*/
 @media only screen and (min-width: 992px) and (max-width: 1199px){

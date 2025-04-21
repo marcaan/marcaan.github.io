@@ -33,7 +33,7 @@ html, body{
 .nav-menu .nav-container .navbar-nav a:hover{
   color: #271843;
 }
-.nav-menu .nav-container .navbar-nav .last-contact a{
+.nav-menu .nav-container .navbar-nav .active{
   padding-right: 0;
   color: #271843;
 }
@@ -136,22 +136,158 @@ html, body{
   font-family: 'Space Mono', sans-serif;
   color: #271843;
 }
+.popup-menu{
+  display: none;
+}
 
 
 
 /* ------  MEDIA QUERIES ------ */
-
+/*------ XXS DEVICES ------*/
+@media only screen and (max-width: 399px){
+  .container-logo a .logo-camelia{
+    display: none;
+  }
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 0px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 1.8em;
+    height: 1.8em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
+  .container-form .form-area{
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .container-form .form-area ul li .btn-form{
+    width: 100%;
+  } 
+  .container-form .title-form h1{
+    font-size: 40px;
+  }
+  .container-form .title-form h3{
+    font-size: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .container-footer ul li a img{
+    height: 28px;
+  }
+}
 /*------ XS DEVICES ------*/
-@media only screen and (min-width: 435px) and (max-width: 599px){
-
+@media only screen and (min-width: 400px) and (max-width: 599px){
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 7px 16px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 1.8em;
+    height: 1.8em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .container-form .title-form h3{
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 22px;
+  }
+  .container-form .form-area{
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .container-form .form-area ul li .btn-form{
+    width: 60%;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
 }
 /*------ S DEVICES ------*/
 @media only screen and (min-width: 600px) and (max-width: 767px){
-
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 7px 16px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 2em;
+    height: 2em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
+  .container-form .form-area ul li .btn-form{
+    width: 60%;
+  }
 }
 /*------ M DEVICES ------*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
-
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 7px 16px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 2em;
+    height: 2em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .offcanvas-body ul li a{
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+  }
+  .container-form .form-area ul li .btn-form{
+    width: 60%;
+  }
+  .container-form .title-form h3{
+    font-size: 22px;
+  }
 }
 /*------ L DEVICES ------*/
 @media only screen and (min-width: 992px) and (max-width: 1199px){

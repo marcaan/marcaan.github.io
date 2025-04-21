@@ -40,18 +40,55 @@
         </div>
         <nav class="navbar navbar-expand-lg nav-menu col-6">
             <div class="container-fluid nav-container">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              <button class="navbar-toggler popup-menu btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+              <div class="offcanvas offcanvas-end popup-menu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contacts.html">Contatti</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
               <div class="nav-box collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item first-home">
+                  <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
-                  <li class="nav-item second-portfolio">
+                  <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                   </li>
-                  <li class="nav-item third-about">
+                  <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item last-contact">
@@ -68,7 +105,7 @@
     <div class="containter-fluid clearfix container-hero">
         <div class="row">
           <div class="col-8 container-hero-text d-flex flex-column align-self-center"></div>
-          <span class="square"></span>
+          <!-- <span class="square"></span> -->
           <div class="col-4"></div>
           <!-- <div class="container-hero-img">
             <img src="assets/img/daruma-bw.png" alt="daruma image" height="500px">
@@ -80,19 +117,23 @@
   </section>
   <section>
     <div class=" containter-fluid clearfix container-bio">
+      <div class="row"></div>
       <div class="col-2"></div>
       <div class="col-8 bio-box">
         <h2 class="bio-title">Mi presento</h2>
         <p class="bio-description">
-          Benvenuto, mi chiamo Marco Canapeti e sono un junior web designer un pochino "anomalo"<br>
+          Benvenuto, mi chiamo Marco Canapeti, sono nato a Cattolica e residente a Pesaro e sono un junior web designer un pochino "anomalo". 
           Il mio percorso è tortuoso e movientato, dopo aver inizialmente intrapreso un percorso di studi in economia e commercio, ho capito dopo qualche anno che non faceva per me e sono entrato del mondo della programmazione e anche della grafica, affascinato dalla creatività di queste realtà.<br> 
-          Dopo aver lavorato come junior web designer presso l'agenzia di comuncazione Radio Bakery di Riccione e successivamente come junior graphic designer presso la società Lindbergh Hotels & Resorts a Pesaro, le cose sono cambiate con l'arrivo del Covid. Le circostanze mi hanno portato a cercare altre strade, lavori completamente diversi pur di non restare con le mani in mano fino a che ho iniziato a lavorare come pittore edile.<br>
+          Dopo aver lavorato come junior web designer presso l'agenzia di comuncazione Radio Bakery di Riccione e successivamente come junior graphic designer presso la società Lindbergh Hotels & Resorts a Pesaro, le cose sono cambiate con l'arrivo del Covid. Le circostanze mi hanno portato a cercare altre strade, lavori completamente diversi pur di non restare con le mani in mano fino a che ho iniziato a lavorare come pittore edile.<br class="no-sm">
           Credo nel cambiamento e al fatto che con dedizione si possono raggiungere ottimi risultati.<br> Mi sono adattato a lavori completamente diversi ma ritengo si possa sempre imparare con impegno e umiltà, aumentando la conoscenza e apprendendo le dinamiche di questi lavori.<br>
           Sono una persona dinamica, precisa e volenterosa di imparare per questo motivo sono determinato nel ritornare sulla strada che avevo intrapreso inizialmente e aumentare le mie conoscenze e le skills nel mondo della programmazione.
         </p>
       </div>
-      <div class="col-2 mx-auto bio-btn-box">
-        <a class="btn btn-primary btn-bio" href="contacts.html" role="button">Contattami</a>
+      <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 mx-auto bio-btn-box">
+        <!-- <button type="button" class="btn">
+          <a class="btn btn-primary btn-bio" href="contacts.html">Contattami</a>
+        </button> -->
+        <a class="btn btn-primary btn-bio" href="contacts.html">Contattami</a>      
       </div>
     </div>
   </section>
@@ -117,16 +158,16 @@
       </div>
     </div>
   </footer>
-  
-
-
-
-
-
-
-
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- EmailJS-->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("aXwNd1V8xXPU9wvXT"); // Lo trovi in Dashboard → Account → Public Key
+    })();
+  </script>
 </body>
 </html>
