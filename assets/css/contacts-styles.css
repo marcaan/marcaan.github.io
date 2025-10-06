@@ -145,9 +145,6 @@ html, body{
 /* ------  MEDIA QUERIES ------ */
 /*------ XXS DEVICES ------*/
 @media only screen and (max-width: 399px){
-  .container-logo a .logo-camelia{
-    display: none;
-  }
   .popup-menu{
     display: block;
   }
@@ -165,6 +162,9 @@ html, body{
   }
   .container-header .nav-container{
     justify-content: end;
+  }
+  .container-logo a .logo-camelia{
+    display: none;
   }
   .offcanvas-body ul li a{
     margin-left: 20px;
@@ -207,8 +207,18 @@ html, body{
     width: 1.8em;
     height: 1.8em;
   }
+  .container-header {
+    padding: 0 17px;
+  }
   .container-header .nav-container{
     justify-content: end;
+  }
+  .container-logo a .logo-scritta{
+    width: 131px;
+  }
+  .container-logo a .logo-camelia {
+    width: 30px;
+    margin-left: 5px;
   }
   .container-form .title-form h3{
     margin-right: 20px;

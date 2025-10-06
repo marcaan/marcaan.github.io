@@ -202,6 +202,9 @@ html, body{
     width: 1.8em;
     height: 1.8em;
   }
+  .container-header {
+    padding: 0 17px;
+  }
   .container-header .nav-container{
     justify-content: end;
   }
@@ -212,9 +215,6 @@ html, body{
   }
   .container-logo a .logo-scritta{
     width: 131px;
-  }
-  .container-header {
-    padding: 0 17px;
   }
   .container-logo a .logo-camelia {
     width: 30px;

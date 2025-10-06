@@ -265,6 +265,12 @@ html, body {
     width: 1.8em;
     height: 1.8em;
   }
+  .container-hero h1 {
+    bottom: 50px;
+    font-size: 60px;
+    line-height: 65px;
+    margin-left: 30px;
+  }
   .container-header .nav-container {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -328,10 +334,10 @@ html, body {
     height: 400px;
   }
   .container-hero h1 {
-    bottom: 120px;
-    font-size: 50px;
-    line-height: 65px;
-    margin-left: 30px;
+    bottom: 80px;
+    font-size: 65px;
+    line-height: 70px;
+    margin-left: 45px;
   }
   .container-bio {
     margin-top: 110px;
@@ -384,6 +390,9 @@ html, body {
   .container-hero .square {
     display: none;
   }
+  .container-hero h1{
+    bottom: 80px;
+  }
 }
 
 /*------ M DEVICES ------*/
@@ -420,5 +429,11 @@ html, body {
 }
 
 /*------ L DEVICES ------*/
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
 /*------ XL devices  ------*/
+@media only screen and (min-width: 1200px){
+
+}
 /*# sourceMappingURL=styles.css.map */

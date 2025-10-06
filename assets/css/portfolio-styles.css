@@ -117,9 +117,33 @@ html, body{
 
 
 /* ------  MEDIA QUERIES ------ */
+/*------ XXS DEVICES ------*/
+@media only screen and (max-width: 399px){
+  .popup-menu{
+    display: block;
+  }
+  .btn-menu{
+    padding: 0px;
+    border: none;
+  }
+  .btn-menu:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler-icon{
+    background-image: url(../img/hamburger-menu.png);
+    width: 1.8em;
+    height: 1.8em;
+  }
+  .container-header .nav-container{
+    justify-content: end;
+  }
+  .container-logo a .logo-camelia{
+    display: none;
+  }
+}
 
 /*------ XS DEVICES ------*/
-@media only screen and (max-width: 599px){
+@media only screen and (min-width: 400px) and (max-width: 599px){
   .popup-menu{
     display: block;
   }
@@ -137,6 +161,16 @@ html, body{
   }
   .container-header .nav-container{
     justify-content: end;
+  }
+  .container-header {
+    padding: 0 17px;
+  }
+  .container-logo a .logo-scritta{
+    width: 131px;
+  }
+  .container-logo a .logo-camelia {
+    width: 30px;
+    margin-left: 5px;
   }
   .offcanvas-body ul li a{
     margin-left: 20px;
